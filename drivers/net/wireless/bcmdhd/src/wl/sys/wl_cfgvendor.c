@@ -1022,6 +1022,7 @@ wl_cfgvendor_set_batch_scan_cfg(struct wiphy *wiphy,
 	return err;
 }
 
+<<<<<<< HEAD
 static int
 wl_cfgvendor_significant_change_cfg(struct wiphy *wiphy,
 	struct wireless_dev *wdev, const void  *data, int len)
@@ -1103,6 +1104,8 @@ exit:
 	return err;
 }
 
+=======
+>>>>>>> 4736cb9e285c... net: wireless: bcmdhd: Remove "dhd_handle_swc_evt" from dhd.
 static int wl_cfgvendor_enable_lazy_roam(struct wiphy *wiphy,
 	struct wireless_dev *wdev, const void  *data, int len)
 {
@@ -2748,14 +2751,6 @@ static const struct wiphy_vendor_command wl_vendor_cmds [] = {
 		},
 		.flags = WIPHY_VENDOR_CMD_NEED_WDEV | WIPHY_VENDOR_CMD_NEED_NETDEV,
 		.doit = wl_cfgvendor_hotlist_cfg
-	},
-	{
-		{
-			.vendor_id = OUI_GOOGLE,
-			.subcmd = GSCAN_SUBCMD_SET_SIGNIFICANT_CHANGE_CONFIG
-		},
-		.flags = WIPHY_VENDOR_CMD_NEED_WDEV | WIPHY_VENDOR_CMD_NEED_NETDEV,
-		.doit = wl_cfgvendor_significant_change_cfg
 	},
 	{
 		{
