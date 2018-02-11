@@ -1329,7 +1329,6 @@
 };
 
 &soc {
-	qcom,freq-mitigation-value = <1056000>;
 	qcom,msm-thermal {
 		qcom,poll-ms = <50>;
 		qcom,limit-temp = <80>;
@@ -1340,9 +1339,6 @@
 		};
 		qcom,vdd-gfx-rstr{
 			qcom,levels = <6 8 9>; /* Nominal, Turbo, Turbo_L1 */
-		};
-		msm_thermal_freq: qcom,vdd-apps-rstr{
-			qcom,levels = <1056000 1555200 1555200>;
 		};
 	};
 };
