@@ -3717,8 +3717,7 @@ CONFIG_DMADEVICES=y
 # DMA Devices
 #
 # CONFIG_AMBA_PL08X is not set
-# CONFIG_DW_DMAC_CORE is not set
-# CONFIG_DW_DMAC is not set
+# CONFIG_DW_DMAC_CORE is not set# CONFIG_DW_DMAC is not set
 # CONFIG_DW_DMAC_PCI is not set
 CONFIG_QCOM_SPS_DMA=y
 # CONFIG_PL330_DMA is not set
@@ -3753,7 +3752,6 @@ CONFIG_UIO_MSM_SHAREDMEM=y
 
 #
 # Microsoft Hyper-V guest support
-
 #
 CONFIG_STAGING=y
 # CONFIG_PRISM2_USB is not set
